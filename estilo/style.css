@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+:root{
+    --cor01: #2a413d;
+    --cor02: #516861;
+    --cor03: #6a7573;
+    --cor04: #DBEBE2;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient( to left, var(--cor01), var(--cor03));
+    overflow: hidden;
+}
+
+header{
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    background-color: black;
+}
+header > div.logo > img{
+    height: 25px;
+    display: inline-block;
+}
+
+header > menu > a {
+    padding: 10px;
+    margin-right: 5px;
+    display: inline;
+    flex-basis: 150px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    
+}
+
+header > menu > a:hover{
+    border-radius: 15px;
+    box-shadow: 0px 0px 7px white;
+}
+
+main{
+    margin-top: 80px;
+    display: flex;
+    flex-flow: row wrap;
+}
+section.bio{
+    height: 300px;
+    width: 300px;
+}
+section.perfil{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: var(--cor01);
+}
