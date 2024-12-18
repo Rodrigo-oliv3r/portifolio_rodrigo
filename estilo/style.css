@@ -32,7 +32,7 @@ header{
     background-color: black;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: fixed ;
 }
 
 header > div.logo > img{
@@ -82,7 +82,7 @@ div.bio{
     width: 450px;
 }
 
-div.bio > h1 {
+section.inicio > div.bio > h1 {
     font-family: "Oswald", sans-serif;
     font-size: 2.5em;
     font-weight: bolder;
@@ -108,19 +108,46 @@ div.perfil {
     background-color: var(--cor01);
 }
 
+h1#titulo{
+    text-align: center;
+    margin: 10px;
+}
+
 section.projetos{
-    height: 400px;
+    height: 100vh;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
+    align-items: top;
     border: 1px solid black;
 }
 
 section.projetos > div {
-    flex-basis: 200px;
-    height: 200px;
+    flex: 1 1 200px;
+    height: 300px;
+    margin: 10px;
+    background-color: rgb(109, 200, 227);
     text-align: center;
     border: 1px solid black;
+    border-radius: 5px;
     
+    
+}
+section.projetos > div:hover {
+    
+    background-color: green;    
+    transition: 1s;
+    transform: rotatey(360deg) translate(0px, -10px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.663);
+    transition: transform .3s border 4s;    
+}
+
+section.redes-sociais{
+    height: 100vh;
+    background-color: var(--cor03);
+
+}
+section.redes-sociais > div {
+    border: 1px solid black;
+    ba
 }
