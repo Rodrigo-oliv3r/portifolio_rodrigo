@@ -142,8 +142,7 @@ section.projetos > div#login:hover {
     background-position: center center;
 }
 
-section.projetos > div:hover {
-    
+section.projetos > div:hover {    
     background-color: green;    
     transition: 1s;
     transform: rotatey(360deg) translate(0px, -10px);
